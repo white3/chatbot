@@ -45,9 +45,9 @@ else
 end
 
 # slack adapter demands a value even in dev when wa aren;t using it...
-config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah')
+# config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah')
 
-#Lita.configure do |config|
-#	config.robot.adapter = :slack
-#	config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
-#end
+Lita.configure do |config|
+	config.robot.adapter = :slack
+	config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
+end
