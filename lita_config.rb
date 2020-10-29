@@ -30,24 +30,21 @@ Lita.configure do |config|
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
-end
+	config.robot.adapter = :slack
+	config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
 
 # The adapter you want to connect with. Make sure you've added the
 #
 # appropriate gem to the Gemfile.
 #
 # heroku uses a RACK_ENV of 'production' by default
-if ENV['BACK_ENV']=='production'
-  config.robot.adapter =:slack
-  config.redis[:url]=ENV.fetch('REDIS_URL')
-else
-  config.robot.adapter=:shell
-end
+  if ENV['BACK_ENV']=='production'
+    config.robot.adapter =:slack
+    config.redis[:url]=ENV.fetch('REDIS_URL')
+  else
+    config.robot.adapter=:shell
+  end
 
 # slack adapter demands a value even in dev when wa aren;t using it...
 # config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah')
-
-Lita.configure do |config|
-	config.robot.adapter = :slack
-	config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
 end
