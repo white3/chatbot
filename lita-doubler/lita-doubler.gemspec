@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["1070072593@qq.com"]
   spec.description   = "Doubles numbers - simple demo skill"
   spec.summary       = "Doubles numbers - simple demo skill"
-  spec.homepage      = "https://github.com/white3/lita-doubler"
+  spec.homepage      = "https://github.com/white3/chatbot"
   spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
