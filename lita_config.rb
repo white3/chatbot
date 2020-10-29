@@ -34,7 +34,7 @@ Lita.configure do |config|
   # aconfig.handlers.doubler =
   # config.handlers.some_handler.some_config_key = "value"
   config.robot.adapter = :slack
-  config.adapters.slack.token = "xoxb-1458563476386-1451835816102-1oxxXtBhYFV5zDhdJsNJLk1M"
+  config.adapters.slack.token = "xoxb-1458563476386-1451835816102-GG68RpykOdJdT6QTt40sYQtz"
 
 # The adapter you want to connect with. Make sure you've added the
 #
@@ -49,5 +49,5 @@ Lita.configure do |config|
   end
 
 # slack adapter demands a value even in dev when wa aren;t using it...
-  config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-1oxxXtBhYFV5zDhdJsNJLk1M')
+  config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-GG68RpykOdJdT6QTt40sYQtz')
 end
