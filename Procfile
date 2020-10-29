@@ -1,1 +1,2 @@
-web: bundle exec lita
+web: cd lita-doubler && bundle exec lita
+# bundle exec lita
