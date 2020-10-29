@@ -24,14 +24,14 @@ Lita.configure do |config|
   # config.adapter.password = "secret"
 
   ## Example: Set options for the Redis connection.
-  config.redis.host = "redis://h:pd62753fc0063a655a1e8b0d9f7d2565fcca66501c1ce3f47ef9df7161c3aa4df@ec2-34-237-4-255.compute-1.amazonaws.com"
+  config.redis.host = "h:pd62753fc0063a655a1e8b0d9f7d2565fcca66501c1ce3f47ef9df7161c3aa4df@ec2-34-237-4-255.compute-1.amazonaws.com"
   config.redis.port = 14649
 
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
-  config.robot.adapter = :slack
-  config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
+  # config.robot.adapter = :slack
+  # config.adapters.slack.token = "xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah"
 
 # The adapter you want to connect with. Make sure you've added the
 #
@@ -46,5 +46,5 @@ Lita.configure do |config|
   end
 
 # slack adapter demands a value even in dev when wa aren;t using it...
-# config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah')
+  config.adapters.slack.token = ENV.fetch('SLACK_TOKEN','xoxb-1458563476386-1451835816102-M0Phs506NiEtYLGRTZLJesah')
 end
