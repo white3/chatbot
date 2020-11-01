@@ -20,6 +20,8 @@ Lita.configure do |config|
   config.robot.adapter = :shell
   # config.robot.adapter = :doubler
   config.handlers = :doubler
+  config.handlers = :calender
+  config.handlers = :calculator
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
