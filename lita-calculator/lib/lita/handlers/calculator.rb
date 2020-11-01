@@ -9,7 +9,7 @@ module Lita
         :respond_with_calculator,
         command: true,
         help: { 'calc 999999999999999999 * 2525252' => 
-          " = 2525251999999999997474748.0"}
+          "2525251999999999997474748.0"}
       )
       
       @@calculator = CalculatorModel.new()
